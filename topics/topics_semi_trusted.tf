@@ -18,6 +18,6 @@ resource "confluent_kafka_topic" "kafka_topics_semi_trusted" {
   }
 
   lifecycle {
-    prevent_destroy  = true
+    prevent_destroy  = false
   }
 }
