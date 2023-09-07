@@ -11,7 +11,6 @@ variable "topics_trusted" {
   description = "List of kafka topic(s) for a trusted cluster"
   type = list(object({
     request_id       = string
-    cluster_id       = string
     name             = string
     partitions_count = number
     cleanup_policy   = string
