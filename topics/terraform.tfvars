@@ -31,12 +31,12 @@ topics_semi_trusted = [
     request_id = 3,
     name = "kiwisaver",
     partitions_count = 3,
-    cleanup_policy = "compact"
+    cleanup_policy = "delete"
   },
   {
-    request_id = 3,
+    request_id = 4,
     name = "general_insurances",
     partitions_count = 3,
-    cleanup_policy = "compact"
+    cleanup_policy = "delete"
   }
 ]
