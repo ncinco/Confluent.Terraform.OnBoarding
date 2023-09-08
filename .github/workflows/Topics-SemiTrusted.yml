@@ -1,4 +1,4 @@
-name: 'Topics-Trusted'
+name: 'Topics-SemiTrusted'
  
 on:
   workflow_dispatch:
