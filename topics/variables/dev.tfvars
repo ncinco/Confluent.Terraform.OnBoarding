@@ -13,7 +13,7 @@ credentials_semi_trusted = {
   secret           = "lIlfzUzvcjWKSwuuf9Ev1+FadvErfwGHkC18kGxgo08nDh7xJ55geB2XT6aCZsFw"
 }
 
-credentials_un_trusted = {
+credentials_untrusted = {
   cluster_id       = "lkc-197rqj"
   key              = "UWFDRKXZI2STR7C3"
   secret           = "ka5dfJ2KmLbMqiOkF7VTrDgeFCGf+JQD2uyBWEjFzXukLCDyB632Q6H0DtmJmE5e"
