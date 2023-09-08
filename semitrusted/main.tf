@@ -21,6 +21,9 @@ module "topics" {
   source = "../modules/topics"
 
   rest_endpoint = var.rest_endpoint
-  credentials = var.credentials
+  cluster_id = var.cluster_id
+  cluster_key = var.cluster_key
+  cluster_secret = var.cluster_secret
+
   topics = var.topics
 }

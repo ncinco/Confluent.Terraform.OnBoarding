@@ -3,13 +3,19 @@ variable "rest_endpoint"{
   type               = string
 }
 
-variable "credentials" {
-  description = "Credentials for a  cluster"
-  type = object({
-    cluster_id       = string
-    key              = string
-    secret           = string
-  })
+variable "cluster_id"{
+  description        = "Cluster Id"
+  type               = string
+}
+
+variable "cluster_key"{
+  description        = "Cluster Key"
+  type               = string
+}
+
+variable "cluster_secret"{
+  description        = "Cluster secret"
+  type               = string
 }
 
 variable "topics" {
