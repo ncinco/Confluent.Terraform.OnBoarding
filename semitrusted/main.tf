@@ -20,6 +20,7 @@ provider "azurerm" {
 module "topics" {
   source = "../modules/topics"
 
+  rest_endpoint = var.rest_endpoint
   credentials = var.credentials
   topics = var.topics
 }
