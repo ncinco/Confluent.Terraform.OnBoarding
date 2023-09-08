@@ -18,7 +18,7 @@ env:
 defaults:
   run:
     shell: bash
-    working-directory: ./utrusted
+    working-directory: ./untrusted
 
 jobs:
   dev:
