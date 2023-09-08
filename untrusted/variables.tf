@@ -1,5 +1,10 @@
-variable "credentials_untrusted" {
-  description = "Credentials for a untrusted cluster"
+variable "rest_endpoint"{
+  description        = "Environment endpoint"
+  type               = string
+}
+
+variable "credentials" {
+  description = "Credentials for a cluster"
   type = object({
     cluster_id       = string
     key              = string
@@ -7,8 +12,8 @@ variable "credentials_untrusted" {
   })
 }
 
-variable "topics_untrusted" {
-  description = "List of kafka topic(s) for a untrusted cluster"
+variable "topics" {
+  description = "List of kafka topic(s) for a cluster"
   type = list(object({
     request_id       = string
     name             = string
