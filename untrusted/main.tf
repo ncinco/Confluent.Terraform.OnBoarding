@@ -16,3 +16,10 @@ terraform {
 provider "azurerm" {
   features {}
 }
+
+module "topics" {
+  source = "../modules/topics"
+
+  credentials = var.credentials
+  topics = var.topics
+}
