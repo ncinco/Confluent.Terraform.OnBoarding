@@ -20,9 +20,9 @@ provider "azurerm" {
 module "topics" {
   source = "../modules/topics"
 
-  rest_endpoint = var.rest_endpoint
-  cluster_id = var.cluster_id
-  cluster_key = var.cluster_key
+  rest_endpoint  = var.rest_endpoint
+  cluster_id     = var.cluster_id
+  cluster_key    = var.cluster_key
   cluster_secret = var.cluster_secret
 
   topics = var.topics
