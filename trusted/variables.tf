@@ -11,11 +11,13 @@ variable "cluster_id"{
 variable "cluster_key"{
   description        = "Cluster Key"
   type               = string
+  sensitive          = true
 }
 
 variable "cluster_secret"{
   description        = "Cluster secret"
   type               = string
+  sensitive          = true
 }
 
 variable "topics" {
