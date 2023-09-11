@@ -22,7 +22,7 @@ output "file_set_output"  {
 }
 
 data "local_file" "topics_requests_file" {
-  filename = "/trusted/topics_requests.yml"
+  filename = "../trusted/topics_requests.yml"
 }
 
 output "topics_requests_output" {
