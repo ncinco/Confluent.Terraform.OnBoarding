@@ -21,6 +21,14 @@ output "file_set_output"  {
   value = fileset(path.module, "*")
 }
 
+data "local_file" "topics_requests_file" {
+  filename = "topics_requests.yml"
+}
+
+output "topics_requests_output" {
+  value = data.local_file.topics_requests_file.content
+}
+
 module "topics" {
   source = "../modules/topics"
 
