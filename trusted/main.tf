@@ -17,6 +17,14 @@ provider "azurerm" {
   features {}
 }
 
+locals {
+  topics_requests = jsondecode(templatefile("./${path.module}/topics_requests.yml", { }))
+}
+
+output "topics_requests_output" {
+  value = local.topics_requests
+}
+
 module "topics" {
   source = "../modules/topics"
 

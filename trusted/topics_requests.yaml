@@ -1,0 +1,21 @@
+topics:
+  "accounts" :
+    request_id : 1
+    name: "accounts"
+    description: "description for accounts topic"
+    partitions_count : 3
+    cleanup_policy : "compact"
+    
+  "transactions" :
+    request_id : 2
+    name: "transactions"
+    description: "description for transactions topic"
+    partitions_count : 3
+    cleanup_policy : "compact"
+
+  "kiwisavers" :
+    request_id : 3
+    name: "kiwisavers"
+    description: "description for kiwisavers topic"
+    partitions_count : 3
+    cleanup_policy : "compact"
