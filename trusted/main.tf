@@ -17,16 +17,12 @@ provider "azurerm" {
   features {}
 }
 
-locals {
-  topics_requests = yamldecode(file("${path.module}/topics_requests.yml"))
-}
-
-output "path_module_output" {
-  value = path.module
+data "local_file" "topics_requests_file" {
+  filename = "${path.module}/topics_requests.yml"
 }
 
 output "topics_requests_output" {
-  value = local.topics_requests
+  value = data.local_file.topics_requests_file.content
 }
 
 module "topics" {
