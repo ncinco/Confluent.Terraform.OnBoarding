@@ -18,7 +18,7 @@ provider "azurerm" {
 }
 
 locals {
-  topics_requests = yamldecode(file("./${path.root}/topics_requests.yml"))
+  topics_requests = yamldecode(file("./topics_requests.yml"))
 }
 
 output "path_module_output" {
