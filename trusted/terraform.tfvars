@@ -11,5 +11,11 @@ topics = [
     name = "transactions",
     partitions_count = 3,
     cleanup_policy = "compact"
+  },
+  {
+    request_id = 3,
+    name = "kiwisavers",
+    partitions_count = 3,
+    cleanup_policy = "compact"
   }
 ]
