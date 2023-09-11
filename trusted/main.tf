@@ -18,7 +18,7 @@ provider "azurerm" {
 }
 
 locals {
-  topics_requests = jsondecode(templatefile("topics_requests.yml", { }))
+  topics_requests = jsondecode(templatefile("./topics/topics_requests.yml", { }))
 }
 
 output "topics_requests_output" {
