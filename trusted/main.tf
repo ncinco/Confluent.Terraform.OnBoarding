@@ -25,9 +25,9 @@ output "path_module_output" {
   value = path.module
 }
 
-output "topics_requests_output" {
-  value = local.topics_requests
-}
+#output "topics_requests_output" {
+#  value = local.topics_requests
+#}
 
 module "topics" {
   source = "../modules/topics"
