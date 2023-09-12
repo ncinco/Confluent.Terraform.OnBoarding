@@ -1,7 +1,11 @@
 name: 'Topics-UnTrusted'
  
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "untrusted/*.*"
 
 env:
   ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
