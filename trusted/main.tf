@@ -33,5 +33,5 @@ module "topics" {
   cluster_key    = var.cluster_key
   cluster_secret = var.cluster_secret
 
-  topics         = var.topics
+  topics         = locals.token_requests
 }
