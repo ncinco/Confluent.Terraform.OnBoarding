@@ -18,7 +18,7 @@ provider "azurerm" {
 }
 
 locals {
-  var_token_requests = jsondecode(templatefile("./${path.module}/topic_requests.yaml", {
+  var_token_requests = yamldecode(templatefile("./${path.module}/topic_requests.yaml", {
   }))
 }
 
