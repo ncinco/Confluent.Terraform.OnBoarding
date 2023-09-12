@@ -1,6 +1,4 @@
 name: 'Topics-Trusted'
- 
-
 
 on:
   push:
