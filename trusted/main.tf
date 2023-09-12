@@ -18,7 +18,7 @@ provider "azurerm" {
 }
 
 locals {
-  token_requests = yamldecode(file("${path.module}/topic_requests.yaml"))
+  token_requests = jsondecode(yamldecode(file("${path.module}/topic_requests.yaml")))
 }
 
 output "topic_requests_output"{
