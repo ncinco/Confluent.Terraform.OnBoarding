@@ -1,0 +1,15 @@
+topics:
+- request_id : 1
+  name: "banking"    
+  partitions_count : 3
+  cleanup_policy : "compact"
+
+- request_id : 2
+  name: "investments"
+  partitions_count : 3
+  cleanup_policy : "compact"
+
+- request_id : 3
+  name: "retirement"
+  partitions_count : 3
+  cleanup_policy : "compact"
