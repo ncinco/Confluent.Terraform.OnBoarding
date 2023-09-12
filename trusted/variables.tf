@@ -20,7 +20,7 @@ variable "cluster_secret"{
   sensitive          = true
 }
 
-/* variable "topics" {
+variable "topics" {
   description = "List of kafka topic(s) for a cluster"
   type = list(object({
     request_id       = string
@@ -28,4 +28,4 @@ variable "cluster_secret"{
     partitions_count = number
     cleanup_policy   = string
   }))
-} */
+}
