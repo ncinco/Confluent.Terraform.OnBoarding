@@ -17,6 +17,10 @@ provider "azurerm" {
   features {}
 }
 
+output "topic_requests"{
+  value = file("${path.module}/topic_requests.yaml")
+}
+
 module "topics" {
   source = "../modules/topics"
 
