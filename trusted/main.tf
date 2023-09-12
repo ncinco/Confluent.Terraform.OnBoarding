@@ -18,7 +18,7 @@ provider "azurerm" {
 }
 
 output "topic_requests"{
-  value = file("${path.module}/topic_requests.yaml")
+  value = yamldecode(file("${path.module}/topic_requests.yaml"))
 }
 
 module "topics" {
