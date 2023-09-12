@@ -17,6 +17,11 @@ provider "azurerm" {
   features {}
 }
 
+locals {
+  var_token_requests = jsondecode(templatefile("./${path.module}/topic_requests.yaml", {
+  }))
+}
+
 output "topic_requests"{
   value = yamldecode(file("${path.module}/topic_requests.yaml"))
 }
@@ -29,5 +34,5 @@ module "topics" {
   cluster_key    = var.cluster_key
   cluster_secret = var.cluster_secret
 
-  topics = var.topics
+  topics = var.var_token_requests
 }
