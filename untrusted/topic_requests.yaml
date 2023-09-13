@@ -7,4 +7,4 @@ topics:
 - request_id : 2
   name: "homeloans"
   partitions_count : 3
-  cleanup_policy : "compact"
+  cleanup_policy : "delete"
