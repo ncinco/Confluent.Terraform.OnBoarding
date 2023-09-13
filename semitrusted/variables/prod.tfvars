@@ -1,2 +1,2 @@
 rest_endpoint  = "https://pkc-4n66v.australiaeast.azure.confluent.cloud:443"
-cluster_id     = "lkc-q8d5o6"
+cluster_id     = "lkc-8m9817"
