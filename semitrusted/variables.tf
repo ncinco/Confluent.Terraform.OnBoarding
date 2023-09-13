@@ -19,13 +19,3 @@ variable "cluster_secret"{
   type               = string
   sensitive          = true
 }
-
-variable "topics" {
-  description = "List of kafka topic(s) for a cluster"
-  type = list(object({
-    request_id       = string
-    name             = string
-    partitions_count = number
-    cleanup_policy   = string
-  }))
-}
