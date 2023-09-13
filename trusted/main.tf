@@ -21,10 +21,6 @@ locals {
   token_requests = yamldecode(file("${path.module}/topic_requests.yaml"))["topics"]
 }
 
-output "topic_requests_output"{
-  value = local.token_requests
-}
-
 module "topics" {
   source = "../modules/topics"
 
