@@ -6,5 +6,5 @@ topics:
 
 - request_id : 2
   name: "transactions"
-  partitions_count : 3
+  partitions_count : 6
   cleanup_policy : "delete"
