@@ -3,13 +3,3 @@ topics:
   name: "accounts"    
   partitions_count : 3
   cleanup_policy : "compact"
-
-- request_id : 2
-  name: "transactions"
-  partitions_count : 6
-  cleanup_policy : "delete"
-
-- request_id : 3
-  name: "kiwisavers"
-  partitions_count : 12
-  cleanup_policy : "delete"
