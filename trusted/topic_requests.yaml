@@ -5,7 +5,7 @@ topics:
   cleanup_policy : "compact"
 
 - request_id : 2
-  name: "kiwisavers"
+  name: "transactions"
   partitions_count : 3
   cleanup_policy : "compact"
 
