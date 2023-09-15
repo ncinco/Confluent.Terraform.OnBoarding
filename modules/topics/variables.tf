@@ -1,6 +1,7 @@
 variable "rest_endpoint"{
   description        = "Environment endpoint"
   type               = string
+  default            = "https://pkc-4n66v.australiaeast.azure.confluent.cloud:443"
 }
 
 variable "cluster_id"{
